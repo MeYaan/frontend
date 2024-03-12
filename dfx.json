@@ -1,6 +1,6 @@
 {
     "canisters": {
-        "icp_simple_site": {
+        "frontend": {
             "frontend": {
                 "entrypoint": "pages/index.html"
             },
@@ -12,7 +12,7 @@
     "version": 1,
     "networks": {
         "local": {
-            "bind": "0.0.0.0:8000",
+            "bind": "0.0.0.0:8002",
             "type": "ephemeral"
         }
     }
