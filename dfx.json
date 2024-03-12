@@ -2,9 +2,9 @@
     "canisters": {
         "frontend": {
             "frontend": {
-                "entrypoint": "/pages/index.html"
+                "entrypoint": "pages/index.html"
             },
-            "source": ["src"],
+            "source": ["pages"],
             "type": "assets"
         }
     },
