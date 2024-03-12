@@ -39,6 +39,24 @@ function toggleDarkMode() {
   updateEditBioIcon();
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.body;
+  const darkModeIcon = document.getElementById("darkModeIcon");
+
+  // Check if the user's preferred mode is already set in localStorage
+  const isDarkMode = localStorage.getItem("darkMode") === "true";
+
+  // If not set, use light mode as the default
+  if (isDarkMode === null) {
+    localStorage.setItem("darkMode", "false");
+  }
+
+  // Apply the mode to the body and update the icon
+  body.classList.toggle("dark-mode", isDarkMode);
+  darkModeIcon.src = isDarkMode
+    ? "../images/lightmode.png"
+    : "../images/nightmode.png";
+});
 
 
 
